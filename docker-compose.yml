@@ -1,0 +1,7 @@
+services:
+  tileserver-gl:
+    image: maptiler/tileserver-gl
+    ports:
+      - "3000:8080"
+    volumes:
+      - .:/data

@@ -1,0 +1,13 @@
+{
+    "version": 8,
+    "name": "Carnav Map Style",
+    "metadata": {},
+    "sources": {
+        "carnav_source": {
+            "type": "vector",
+            "url": "pmtiles://http://localhost:3000/pmtiles/YOUR_FILE_NAME.pmtiles",
+            "attribution": "OpenStreetMap contributors"
+        }
+    },
+    "layers": []
+}
