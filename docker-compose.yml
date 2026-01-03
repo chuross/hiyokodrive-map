@@ -1,6 +1,6 @@
 services:
   maputnik:
-    image: maputnik/editor
+    image: ghcr.io/maplibre/maputnik:main
     platform: linux/amd64
     ports:
       - "3000:80"
