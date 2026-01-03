@@ -3,8 +3,7 @@ services:
     image: ghcr.io/maplibre/maputnik:main
     platform: linux/amd64
     ports:
-      - "3000:80"
-  
+      - "3000:8000"
   file-server:
     image: halverneus/static-file-server
     ports:
