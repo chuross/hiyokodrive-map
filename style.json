@@ -5,7 +5,7 @@
     "sources": {
         "carnav_source": {
             "type": "vector",
-            "url": "pmtiles://http://localhost:3000/pmtiles/YOUR_FILE_NAME.pmtiles",
+            "url": "pmtiles://http://localhost:3001/YOUR_FILE_NAME.pmtiles",
             "attribution": "OpenStreetMap contributors"
         }
     },

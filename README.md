@@ -10,7 +10,7 @@
 
 ## 使い方
 
-### ローカルでの地図確認 (Tileserver GL)
+### ローカルでの地図編集 (Maputnik)
 
 1. `pmtiles/` 以下に `.pmtiles` ファイルを配置します。
 2. Docker環境でサーバーを起動します。
@@ -19,4 +19,10 @@
 docker-compose up
 ```
 
-3. ブラウザで `http://localhost:3000` にアクセスします。
+3. ブラウザで以下のURLにアクセスします。
+   - Maputnik (エディタ): `http://localhost:3000`
+   - ファイルサーバー: `http://localhost:3001`
+
+4. Maputnikで `style.json` を開くか、新規スタイルを作成して以下の形式でソースを追加します。
+   - `pmtiles://http://localhost:3001/YOUR_FILE_NAME.pmtiles`
+
