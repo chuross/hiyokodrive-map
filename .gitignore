@@ -2,3 +2,4 @@ pmtiles/*.pmtiles
 .planetiler_cache
 node_modules/
 .wrangler/
+.DS_Store
