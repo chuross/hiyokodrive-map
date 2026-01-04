@@ -5697,7 +5697,9 @@
                 "village",
                 "state",
                 "country",
-                "continent"
+                "continent",
+                "neighbourhood",
+                "quarter"
             ],
             "layout": {
                 "text-field": "{name}",
