@@ -107,7 +107,7 @@
                 "visibility": "visible"
             },
             "paint": {
-                "fill-color": "#fef7e3"
+                "fill-color": "#f4f6f8"
             }
         },
         {
@@ -134,7 +134,7 @@
                 "visibility": "visible"
             },
             "paint": {
-                "fill-color": "hsla(49, 100%, 88%, 0.34)"
+                "fill-color": "#f0f1f3"
             }
         },
         {
@@ -168,7 +168,7 @@
                 "hospital"
             ],
             "paint": {
-                "fill-color": "#fde"
+                "fill-color": "#fff0f2"
             }
         },
         {
@@ -185,7 +185,7 @@
                 "school"
             ],
             "paint": {
-                "fill-color": "#f0e8f8"
+                "fill-color": "#eaecee"
             }
         },
         {
@@ -2401,7 +2401,7 @@
                 "line-join": "round"
             },
             "paint": {
-                "line-color": "#ffffff",
+                "line-color": "#e6e6e6",
                 "line-opacity": {
                     "stops": [
                         [
@@ -5007,10 +5007,65 @@
                 "visibility": "visible"
             },
             "paint": {
-                "text-color": "#666",
-                "text-halo-blur": 0.5,
+                "text-color": [
+                    "match",
+                    [
+                        "get",
+                        "class"
+                    ],
+                    [
+                        "restaurant",
+                        "cafe",
+                        "bar",
+                        "pub",
+                        "fast_food"
+                    ],
+                    "#d16915",
+                    [
+                        "shop",
+                        "grocery",
+                        "clothing",
+                        "commercial"
+                    ],
+                    "#1a73e8",
+                    [
+                        "hospital",
+                        "pharmacy",
+                        "doctor",
+                        "dentist"
+                    ],
+                    "#d93025",
+                    [
+                        "park",
+                        "garden",
+                        "leisure",
+                        "sports"
+                    ],
+                    "#1e8e3e",
+                    [
+                        "lodging",
+                        "hotel",
+                        "motel"
+                    ],
+                    "#8e24aa",
+                    [
+                        "school",
+                        "college",
+                        "university",
+                        "library"
+                    ],
+                    "#7b5040",
+                    [
+                        "railway",
+                        "bus",
+                        "transport"
+                    ],
+                    "#1a73e8",
+                    "#202124"
+                ],
                 "text-halo-color": "#ffffff",
-                "text-halo-width": 1
+                "text-halo-width": 2.5,
+                "text-halo-blur": 0.5
             }
         },
         {
@@ -5066,10 +5121,65 @@
                 "visibility": "visible"
             },
             "paint": {
-                "text-color": "#666",
-                "text-halo-blur": 0.5,
+                "text-color": [
+                    "match",
+                    [
+                        "get",
+                        "class"
+                    ],
+                    [
+                        "restaurant",
+                        "cafe",
+                        "bar",
+                        "pub",
+                        "fast_food"
+                    ],
+                    "#d16915",
+                    [
+                        "shop",
+                        "grocery",
+                        "clothing",
+                        "commercial"
+                    ],
+                    "#1a73e8",
+                    [
+                        "hospital",
+                        "pharmacy",
+                        "doctor",
+                        "dentist"
+                    ],
+                    "#d93025",
+                    [
+                        "park",
+                        "garden",
+                        "leisure",
+                        "sports"
+                    ],
+                    "#1e8e3e",
+                    [
+                        "lodging",
+                        "hotel",
+                        "motel"
+                    ],
+                    "#8e24aa",
+                    [
+                        "school",
+                        "college",
+                        "university",
+                        "library"
+                    ],
+                    "#7b5040",
+                    [
+                        "railway",
+                        "bus",
+                        "transport"
+                    ],
+                    "#1a73e8",
+                    "#202124"
+                ],
                 "text-halo-color": "#ffffff",
-                "text-halo-width": 1
+                "text-halo-width": 2.5,
+                "text-halo-blur": 0.5
             }
         },
         {
@@ -5124,10 +5234,65 @@
                 "visibility": "visible"
             },
             "paint": {
-                "text-color": "#666",
-                "text-halo-blur": 0.5,
+                "text-color": [
+                    "match",
+                    [
+                        "get",
+                        "class"
+                    ],
+                    [
+                        "restaurant",
+                        "cafe",
+                        "bar",
+                        "pub",
+                        "fast_food"
+                    ],
+                    "#d16915",
+                    [
+                        "shop",
+                        "grocery",
+                        "clothing",
+                        "commercial"
+                    ],
+                    "#1a73e8",
+                    [
+                        "hospital",
+                        "pharmacy",
+                        "doctor",
+                        "dentist"
+                    ],
+                    "#d93025",
+                    [
+                        "park",
+                        "garden",
+                        "leisure",
+                        "sports"
+                    ],
+                    "#1e8e3e",
+                    [
+                        "lodging",
+                        "hotel",
+                        "motel"
+                    ],
+                    "#8e24aa",
+                    [
+                        "school",
+                        "college",
+                        "university",
+                        "library"
+                    ],
+                    "#7b5040",
+                    [
+                        "railway",
+                        "bus",
+                        "transport"
+                    ],
+                    "#1a73e8",
+                    "#202124"
+                ],
                 "text-halo-color": "#ffffff",
-                "text-halo-width": 1
+                "text-halo-width": 2.5,
+                "text-halo-blur": 0.5
             }
         },
         {
