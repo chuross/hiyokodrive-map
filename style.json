@@ -4525,7 +4525,7 @@
                 [
                     "<=",
                     "admin_level",
-                    8
+                    4
                 ],
                 [
                     "!=",
@@ -5006,6 +5006,11 @@
                         "level",
                         0
                     ]
+                ],
+                [
+                    "!=",
+                    "class",
+                    "bus"
                 ]
             ],
             "layout": {
@@ -5120,6 +5125,11 @@
                         "level",
                         0
                     ]
+                ],
+                [
+                    "!=",
+                    "class",
+                    "bus"
                 ]
             ],
             "layout": {
@@ -5233,6 +5243,11 @@
                         "level",
                         0
                     ]
+                ],
+                [
+                    "!=",
+                    "class",
+                    "bus"
                 ]
             ],
             "layout": {
@@ -5318,7 +5333,7 @@
             "type": "symbol",
             "source": "openmaptiles",
             "source-layer": "poi",
-            "minzoom": 13,
+            "minzoom": 9,
             "filter": [
                 "all",
                 [
@@ -5350,7 +5365,7 @@
                 "text-anchor": "top",
                 "text-field": "{name}",
                 "text-font": [
-                    "Noto Sans CJK JP Regular"
+                    "Noto Sans CJK JP Bold"
                 ],
                 "text-ignore-placement": false,
                 "text-max-width": 9,
@@ -5360,13 +5375,13 @@
                 ],
                 "text-optional": true,
                 "text-padding": 2,
-                "text-size": 12
+                "text-size": 14
             },
             "paint": {
-                "text-color": "#666",
+                "text-color": "#222",
                 "text-halo-blur": 0.5,
                 "text-halo-color": "#ffffff",
-                "text-halo-width": 1
+                "text-halo-width": 2
             }
         },
         {
