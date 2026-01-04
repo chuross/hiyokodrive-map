@@ -39,10 +39,41 @@ export default {
         }
 
         try {
-            // R2からオブジェクトを取得
-            const object = await env.R2_BUCKET.get(path, {
-                range: request.headers.get('Range'),
-            });
+            // Rangeヘッダーの処理
+            let range;
+            const rangeHeader = request.headers.get('Range');
+            if (rangeHeader) {
+                const matches = rangeHeader.match(/^bytes=(\d+)-(\d*)$/);
+                if (matches) {
+                    const offset = parseInt(matches[1], 10);
+                    const length = matches[2] ? parseInt(matches[2], 10) - offset + 1 : undefined;
+                    range = { offset, length };
+                }
+            }
+
+            // 試行するパスのリスト
+            // ユーザー報告によると pmtiles-bucket/japan.pmtiles のようにネストされている可能性があるため
+            const candidates = [path, `pmtiles-bucket/${path}`];
+
+            let object = null;
+            let usedPath = "";
+
+            for (const p of candidates) {
+                console.log(`Trying to fetch from R2: ${p}, Range: ${rangeHeader || 'none'}`);
+                try {
+                    object = await env.R2_BUCKET.get(p, {
+                        range,
+                        onlyIf: request.headers,
+                    });
+                    if (object) {
+                        usedPath = p;
+                        console.log(`Found object at: ${p}`);
+                        break;
+                    }
+                } catch (e) {
+                    console.warn(`Failed to fetch ${p}:`, e);
+                }
+            }
 
             if (!object) {
                 return new Response(JSON.stringify({ error: 'Not Found' }), {
