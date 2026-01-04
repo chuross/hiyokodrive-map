@@ -1261,6 +1261,7 @@
                 ]
             ],
             "layout": {
+                "visibility": "none",
                 "line-cap": "butt",
                 "line-join": "round"
             },
@@ -1334,6 +1335,7 @@
                 ]
             ],
             "layout": {
+                "visibility": "none",
                 "line-join": "bevel",
                 "line-cap": "butt"
             },
@@ -1394,6 +1396,9 @@
                     "steps"
                 ]
             ],
+            "layout": {
+                "visibility": "none"
+            },
             "paint": {
                 "line-color": "#cba",
                 "line-dasharray": [
@@ -2209,6 +2214,7 @@
                 ]
             ],
             "layout": {
+                "visibility": "none",
                 "line-cap": "butt",
                 "line-join": "round"
             },
@@ -2735,6 +2741,9 @@
                     "steps"
                 ]
             ],
+            "layout": {
+                "visibility": "none"
+            },
             "paint": {
                 "line-color": "#cba",
                 "line-dasharray": [
@@ -2786,6 +2795,7 @@
                 ]
             ],
             "layout": {
+                "visibility": "none",
                 "line-join": "bevel",
                 "line-cap": "butt"
             },
@@ -3892,6 +3902,9 @@
                     "path"
                 ]
             ],
+            "layout": {
+                "visibility": "none"
+            },
             "paint": {
                 "line-color": "#ffffff",
                 "line-width": {
@@ -3938,6 +3951,7 @@
                 ]
             ],
             "layout": {
+                "visibility": "none",
                 "line-join": "round",
                 "line-cap": "butt"
             },
@@ -3998,6 +4012,9 @@
                     "steps"
                 ]
             ],
+            "layout": {
+                "visibility": "none"
+            },
             "paint": {
                 "line-color": "#cba",
                 "line-dasharray": [
@@ -5364,6 +5381,7 @@
                 "path"
             ],
             "layout": {
+                "visibility": "none",
                 "symbol-placement": "line",
                 "text-field": "{name}",
                 "text-font": [
