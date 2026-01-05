@@ -19,7 +19,8 @@
             "tiles": [
                 "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/{z}/{x}/{y}.pbf"
             ],
-            "attribution": "国土地理院"
+            "attribution": "国土地理院",
+            "maxzoom": 16
         }
     },
     "glyphs": "https://glyphs.geolonia.com/{fontstack}/{range}.pbf",
