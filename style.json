@@ -13,6 +13,13 @@
         "openmaptiles": {
             "type": "vector",
             "url": "pmtiles://http://localhost:3001/japan.pmtiles"
+        },
+        "gsi": {
+            "type": "vector",
+            "tiles": [
+                "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/{z}/{x}/{y}.pbf"
+            ],
+            "attribution": "国土地理院"
         }
     },
     "glyphs": "https://glyphs.geolonia.com/{fontstack}/{range}.pbf",
@@ -776,11 +783,27 @@
             },
             "source": "openmaptiles",
             "source-layer": "building",
+            "layout": {
+                "visibility": "none"
+            },
             "paint": {
                 "fill-antialias": true,
                 "fill-color": "#f1f3f4",
                 "fill-outline-color": "#e0e0e0"
-            }
+            },
+            "minzoom": 13
+        },
+        {
+            "id": "gsi-building",
+            "type": "fill",
+            "source": "gsi",
+            "source-layer": "building",
+            "paint": {
+                "fill-antialias": true,
+                "fill-color": "#f1f3f4",
+                "fill-outline-color": "#e0e0e0"
+            },
+            "minzoom": 13
         },
         {
             "id": "building-top",
@@ -791,7 +814,7 @@
             "source": "openmaptiles",
             "source-layer": "building",
             "layout": {
-                "visibility": "visible"
+                "visibility": "none"
             },
             "paint": {
                 "fill-color": "#f2eae2",
